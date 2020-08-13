@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Roboto:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta charset="utf-8">
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+<script type="text/javascript">
+$(function(){
+  $('.dog_btn').click(function(){
+    $('.dog_img').show();
+  });
+});
+</script>
+        
+        <title> About me, Bora Kim </title>
+    </head>
+
+    
+    <body>
+        <div id="frame">
+            <section id="header">
+                <div id="nav">
+                    <h2 id="nav_title"><a href="borakim.html"><span>about</span> BORA KIM</a></h2>
+                    <ul id="ul_con">
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#hobby">Hobby</a></li>
+                        <li><a href="#residence">Residence</a></li>
+                        <li><a href="#family">Family</a></li>
+                        <li><a href="#profile">Proflie</a></li>
+                    </ul>
+                </div>
+                
+                <section id="profile">
+                        <img id="profile_title_back" src="img/profile_back3.png">
+                        <h2 id="profile_title">PROFILE</h2>
+                        <img class="profile_img_column" id="profile_img" src="img/profile_img.png">
+                        
+                        <div class="profile_txt_column" id="profile_txt">
+                            <p><span>NAME</span> 김보라 ㅣ Bora Kim</p>
+                            <p><span>BIRTH</span> 1997.12.21</p>
+                            <p><span>CONTACT</span> 010-8761-5146</p>
+                            <p><span>STATE</span> 코딩 초보 휴학생</p>
+                            <p><span>INTEREST</span> 프론트엔드</p>
+                            <p><span>NICKNAME</span> 보랭이, 히키코보라</p>
+                            <p><span>LIKE</span> 동물, 귀여운 인형, 누워있기</p>
+                            <p><span>HATE</span> 커피, 아침 일찍 일어나기, 해산물</p>
+                        </div>
+                </section>
+            </section>
+            
+            <section id="family">
+                <div id="family_title"><p>FAMILY<p></div>
+                <div class="family_content">
+                    <div class="family_column" id="family_mom">
+                        <div id="family_img"><img src="img/family_mom.png"></div>
+                        <div id="family_text"><p>엄마</p></div>
+                    </div>
+                    <div class="family_column" id="family_dad">
+                        <div id="family_img"><img src="img/family_dad.png"></div>
+                        <div id="family_text"><p>아빠</p></div>
+                    </div>
+                    <div class="family_column" id="family_daughter">
+                        <div id="family_img"><img src="img/family_daughter.png"></div>
+                        <div id="family_text"><p>딸 (ME)</p></div>
+                    </div>
+                    <div class="family_column" id="family_son">
+                        <div id="family_img"><img src="img/family_son.png"></div>
+                        <div id="family_text"><p>남동생</p></div>
+                    </div>
+                    <div class="family_column" id="family_dog">
+                        <div id="family_img"><img src="img/family_dog.png"></div>
+                        <div id="family_text"><p>강아지 쵸코</p></div>
+                    </div>
+                </div>
+                
+                <div class=dog_click>
+                    <div class="dog_txt"><p>강아지 쵸코의 사진이 궁금하신가요? 아래 텍스트를 눌러 귀여운 쵸코 사진을 확인하세요!</p></div>
+                    <div class="dog_btn"><p><span class="highlight">쵸코 사진 보기</span></p></div>
+                    <div class="dog_img"><img src="img/choco_img.png"></div>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <section id="residence">
+                <div id="residence_title"><p>RESIDENCE<p></div>
+                <div class="map">
+                    <div id="google_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12690.373936084476!2d127.113852586916!3d37.32845594010196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59fccd1d9693%3A0xe5d67010b39d41a8!2sJukjeon-dong%2C%20Suji-gu%2C%20Yongin-si%2C%20Gyeonggi-do!5e0!3m2!1sen!2skr!4v1597302938135!5m2!1sen!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                     </div>
+                    <div id="map_text"><p>경기도 용인시 수지구 죽전동</p></div>
+                    
+                    <div class="howtogo">
+                        <div id="howtogo_title"><p><span id="howtogo_underline"><span id="howtogo_span">위코드</span>까지 어떻게 가나요?</span></p></div>
+                        <div id="howtogo_img">
+                            <div id="howtogo_road_img"><img src="img/howtogo_road.png"></div>
+                            <div class="howtogo_train_img" data-parallax='{"x":700, "from-scroll":2300, "distance":400, "smoothness":15}'>
+                                <img src="img/howtogo_train.png">
+                            </div>
+                        </div>
+                        <div id="howtogo_txt">분당선 : 죽전역 승차 후 선릉역까지 약 45분 소요</div>
+                    </div>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <section id="hobby">
+            
+            </section>
+        
+        </div>
+        
+        
+    <script src="script/jquery-2.1.3.min.js"></script>
+    <script src="script/jquery.easing.1.3.js"></script>
+    <script src="script/jquery.parallax-scroll.js"></script>
+    <script src="script/scroll.js"></script>
+        
+    </body>
+    
+</html>
