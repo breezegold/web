@@ -280,6 +280,9 @@ hr {
     padding: 1px 3.5px;
 }
 
+
+/*relative 섹션 벗어나는 부분, 이미지 위에 기차 이미지 띄우려고 position을 주니까 벗어남*/
+
 #howtogo_img {
     position: absolute;
     margin-bottom: 80em;
@@ -299,6 +302,8 @@ hr {
     bottom: 10px;
     left: 440px;
 }
+
+/**/
 
 #howtogo_txt {
     margin-top: 0.6em;
