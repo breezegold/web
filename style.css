@@ -89,56 +89,87 @@ ul { list-style: none;}
 
 #profile {
     background-color: #EFEFEF;
-    padding-bottom: 9.2em;
+    padding-bottom: 9em;
+}
+
+
+#profile_title_wrapper {
+    max-width: 725px;
+    margin: 0 auto;
+    padding-top: 204px;
+    margin-bottom: 5em;
+}
+
+
+#profile_title_content{
+    height: 183px;
+    background: url(img/profile_back3.png) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #profile_title {
-    padding-top: 204px;;
     text-align: center;
-    font-size: 75px;
+    font-size: 72px;
     font-weight: 900;
     letter-spacing: 23px;
     color: black;
     opacity: 0.999;
-    z-index: 10;
-
-    
+    z-index: 10; 
+    padding-top: 37px;
 }
 
+/*
 #profile_title_back {
     max-width: 42%;
     max-height: 170px;
+    border: 2px aqua dashed;
+    margin: 0 auto;
     position: absolute;
     top: 10.9em;
     left: 29em;
     opacity: 0.97;
+*/
+
 
     
 }
 
 
-.profile_img_column{
-    margin: 7em 2em 0em 21em;
+#profile_content_wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
+
+
+#profile_content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile_column{
+    display: inline-block;
+    margin: 0 auto;
+    margin: 1em 2.4em 3em 2.4em;
+    vertical-align: middle;
+
+}
+
+
 
 #profile_img {
-    width: 30.3%;
-    height: 30.3%;
-    }
+    width: 30%;
 
-.profile_txt_column{
-    display: inline-block;
-}
+    }
 
 
 #profile_txt{
     line-height: 52px;
-    font-size: 16px;
-    float: right;
-    margin: 8.7em 21em 0em 0em;
     font-size: 18.5px;
     font-weight: 300;
+    text-align: left;
+
     
 }
 
@@ -155,21 +186,21 @@ ul { list-style: none;}
 
 #family{
     padding: 5em;
-    padding-top: 9em;
+    margin-top: 5.2em;
    
 }
 
 .family_column {
 /*    border: 1px solid red;*/
-    width: 10.5%;
+    width: 9.5%;
     display: inline-block;
-    margin: 6em 1.5em 4em 1.5em;
+    margin: 4em 1.5em 4em 1.5em;
 
 
 }
 
 #family_img {
-    opacity: 0.7;
+    opacity: 0.65;
     
 }
 
@@ -188,9 +219,12 @@ ul { list-style: none;}
     text-align: center;
 }
 
+
 .family_content {
-    padding-left: 20em;
-    margin-top: 2em;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3.5em;
+ 
 }
 
 .dog_txt {
@@ -204,7 +238,7 @@ ul { list-style: none;}
     text-align: center;
     margin: 1.1em 0 2em 0;
     font-weight: 600;
-    font-size: 16.5px;   
+    font-size: 17px;   
 }
 
 .highlight {
@@ -228,14 +262,14 @@ hr {
     margin-left: auto;
     margin-right: auto;
     border-style: solid 1px;
-    width: 75%;
+    width: 75.5%;
 
 }
 
 /*residence 거주지*/
 
 #residence{
-    border: 1px red solid;
+   
 }
 
 
@@ -244,7 +278,7 @@ hr {
     font-weight: 700;
     color: #2D2D2D;
     text-align: center;
-    margin-top: 2.6em;
+    padding-top: 2.3em;
 }
 
 #google_map{
@@ -262,7 +296,7 @@ hr {
 #howtogo_title {
     color: #3A3A3A;
     text-align: center;
-    margin-top: 4.7em;
+    margin-top: 4em;
     font-size: 28.5px;
     font-weight: 300;
     letter-spacing : -1.4px;
@@ -275,17 +309,15 @@ hr {
     padding-right: 3.5px;
 }
 
-#howtogo_underline {
-   background-color: #FABC32;
-    padding: 1px 3.5px;
+#howtogo_back {
+    background-color: #FABC32;
+    padding: 1px 4.3px;
 }
 
 
-/*relative 섹션 벗어나는 부분, 이미지 위에 기차 이미지 띄우려고 position을 주니까 벗어남*/
-
 #howtogo_img {
-    position: absolute;
-    margin-bottom: 80em;
+    position: relative;
+    margin-bottom: 10em;
 }
 
 #howtogo_road_img{
@@ -303,9 +335,165 @@ hr {
     left: 440px;
 }
 
-/**/
-
 #howtogo_txt {
     margin-top: 0.6em;
     text-align: center;
 }
+
+
+/*hobby 취미*/
+
+#hobby_title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #2D2D2D;
+    text-align: center;
+    padding-top: 2.2em;
+    margin-bottom: 1.7em;
+}
+
+#hobby_content_container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 4em;
+    padding-bottom: 2em;
+    
+}
+
+/*
+.hobby_title2 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing : -0.4px;  
+}
+*/
+
+.hobby_img_container{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hobby_col {
+    max-width: 21.5%;
+    display: inline-block;
+    margin: 1.1em 0.18em;  
+}
+
+.hobby_content_title{
+    margin: 10.5px 0;
+    font-size: 16.8px;
+    text-align: center;
+}
+
+.hobby_txt {
+    font-weight: 300;
+    padding: 8px 62px;
+    line-height: 26.7px;
+    margin-bottom: 3.8em;
+}
+
+
+/*Contact*/
+
+
+#contact_container{
+    max-width: 980px;
+    margin: 0 auto;
+    margin-bottom: 9.5em;
+}
+    
+#contact_title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #2D2D2D;
+    text-align: center;
+    padding-top: 1.8em;
+}
+
+#contact_text{
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2.3em;
+    margin-bottom: 4.5em;
+    line-height: 27px;
+}
+
+#contact_span{
+    background-color: mistyrose;
+    padding: 0 3px;
+}
+
+#form_border{
+    border: 1.5px solid #C6C6C6;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 45px 0;
+    
+}
+
+/*
+#form_title{
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 3px orange solid;
+}
+*/
+
+.form_content{
+    display: inline-block;
+    padding: 15px 11px;
+
+}
+
+label{
+    font-weight: 600;
+    font-size: 16.2px;
+    letter-spacing: 0.2px;
+}
+
+#submit_btn{
+    padding: 6px 8px;
+    margin-top: 35px;
+}
+
+#submit_btn:hover {
+    background-color: darkgrey;
+    border-radius: 3px;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: #5E5E5E;
+    max-width: 100%;
+    padding: 3.6em 12em;
+    
+}
+
+#footer_txt1 {
+    color: white;
+    opacity: 0.65;
+}
+
+#footer_txt2 {
+    color: white;
+    opacity: 0.65;
+    padding-top: 10px;
+}
+
+
+#footer_icon {
+    max-width: 26%;
+    opacity: 0.6;
+    float: right;
+}
+
+
+
+
+
+
